@@ -6,7 +6,7 @@ const MiddleSmall = (props) => {
     const wordArr = props.header.split(' '); 
     return (
         <div className ="middleSmall">
-            <i className="fa fa-mobile" aria-hidden="true"></i>
+            <i className={`fa fa-${props.icon}`} aria-hidden="true"></i>
             
             <div><strong>{wordArr[0]}</strong> {wordArr[1]}</div>
             <p>{props.paragraph}</p>
